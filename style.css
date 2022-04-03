@@ -1,0 +1,160 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-grey: hsl(215, 12%, 26%);
+    --blue: hsl(213, 19%, 18%);
+    --dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    --inactive: hsl(25, 97%, 63%);
+    --const: 10.1rem;
+}
+
+*{
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: var(--dark-blue);
+    font-family: 'Overpass', sans-serif;
+    overflow-x: hidden;
+}
+
+p{
+    font-weight: 400;
+    font-size: 11.25px;
+    line-height: 0.6rem;
+}
+
+h2, h4{
+    font-weight: 700;
+}
+
+div.box{
+    height: 17rem;
+    width: 17rem;
+    
+    background-color: var(--blue);
+
+    border-radius: 1.5rem;
+
+    padding: 1.6rem;
+}
+
+div.box > *{
+    padding: 0rem;
+    margin: 0rem;
+}
+
+div#one{
+    position: absolute;
+    left: calc(50% - var(--const));
+    top: calc(50% - var(--const));
+    transition: 0.5s ease-in-out;
+}
+
+div#one i{
+    background-color: var(--dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+}
+
+div.box h2{
+    padding: 0.5rem 0rem;
+    font-size: x-large;
+}
+
+div.box p{
+    line-height: 1.15rem;
+    margin-bottom: 1rem;
+    color: var(--medium-grey)
+}
+
+div.box div#buttons{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+div.box div#buttons button{
+    color: var(--medium-grey);
+    background-color: var(--dark-grey);
+    border: none;
+    border-radius: 50rem;
+    height: 2.3rem;
+    width: 2.3rem;
+    transition: 0.5s;
+}
+
+div.box div#buttons button:hover{
+    background-color: var(--light-grey);
+    color: var(--white);
+
+}
+
+div.box button#submit{
+    color: var(--white);
+    background-color: var(--inactive);
+    width: 100%;
+    height: 2.3rem;
+    border-radius: 100rem;
+    border: none;
+    transition: 0.7s ease-in-out;
+}
+
+div.box button#submit:hover{
+    background-color: var(--white);
+    color: var(--orange);
+    width: 100%;
+    height: 2.3rem;
+    border-radius: 100rem;
+    border: none;
+}
+
+div#two{
+    position: absolute;
+    right: calc(0% - calc(var(--const) * 2));
+    top: calc(50% - var(--const));
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#two div#rating-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-grey);
+    border-radius: 10rem;
+    padding: 0.3rem 1rem;
+    margin: 0.5rem 0rem;
+}
+
+div#two h4{
+    font-weight: 400;
+    font-size: 11.25px;
+    color: var(--orange);
+    margin: 0rem;
+    padding: 0rem;
+}
+
+div#two p{
+    text-align: center;
+}
+
+@keyframes coolio {
+    0% {color:red; background-color: #ff8888;}
+    25% {transform: translateX(5px);}
+    50% {transform: translateX(-5px);}
+    75% {transform: translateX(0px);}
+    90% {color: red; background-color: #ff8888;}
+}
