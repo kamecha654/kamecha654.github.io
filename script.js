@@ -24,7 +24,6 @@ function ButtonActive(x) {
 
 function Submit() {
     if (y == "") {
-        
         document.getElementById("submit").style.animation = "coolio 0.5s";
         setTimeout(
             function(){

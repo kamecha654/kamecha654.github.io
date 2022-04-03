@@ -6,8 +6,8 @@
     --blue: hsl(213, 19%, 18%);
     --dark-blue: hsl(216, 12%, 8%);
     --orange: hsl(25, 97%, 53%);
-    --inactive: hsl(25, 97%, 63%);
-    --const: 10.1rem;
+    --inactive: hsl(25, 57%, 53%);
+    --const: 11.6rem;
 }
 
 *{
@@ -23,7 +23,7 @@ body{
 
 p{
     font-weight: 400;
-    font-size: 11.25px;
+    font-size: 15px;
     line-height: 0.6rem;
 }
 
@@ -32,8 +32,8 @@ h2, h4{
 }
 
 div.box{
-    height: 17rem;
-    width: 17rem;
+    height: 20rem;
+    width: 20rem;
     
     background-color: var(--blue);
 
@@ -66,11 +66,11 @@ div#one i{
 
 div.box h2{
     padding: 0.5rem 0rem;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 div.box p{
-    line-height: 1.15rem;
+    line-height: 1.5rem;
     margin-bottom: 1rem;
     color: var(--medium-grey)
 }
@@ -81,7 +81,7 @@ div.box div#buttons{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
 }
 
 div.box div#buttons button{
@@ -89,8 +89,8 @@ div.box div#buttons button{
     background-color: var(--dark-grey);
     border: none;
     border-radius: 50rem;
-    height: 2.3rem;
-    width: 2.3rem;
+    height: 3rem;
+    width: 3rem;
     transition: 0.5s;
 }
 
@@ -104,7 +104,7 @@ div.box button#submit{
     color: var(--white);
     background-color: var(--inactive);
     width: 100%;
-    height: 2.3rem;
+    height: 3rem;
     border-radius: 100rem;
     border: none;
     transition: 0.7s ease-in-out;
@@ -113,10 +113,6 @@ div.box button#submit{
 div.box button#submit:hover{
     background-color: var(--white);
     color: var(--orange);
-    width: 100%;
-    height: 2.3rem;
-    border-radius: 100rem;
-    border: none;
 }
 
 div#two{
