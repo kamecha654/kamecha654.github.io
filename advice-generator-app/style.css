@@ -1,0 +1,80 @@
+:root{
+    --scale: ;
+
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+
+
+    --grey-blue: hsl(217, 19%, 38%);
+    --grey-blue-dark: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+
+    --box-height: calc(20rem * var(--scale));
+    --box-width: calc(35rem * var(--scale));
+    --box-padding: 1rem;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--dark-blue);
+}
+
+div#box{
+    position: absolute;
+    top: calc( (50% - (calc(var(--box-height)) / 2 )) - (var(--box-padding) * 1) );
+    left: calc( (50% - (calc(var(--box-width)) / 2 )) - (var(--box-padding) * 1) );
+
+    height: var(--box-height);
+    width: var(--box-width);
+
+    background-color: var(--grey-blue-dark);
+
+    margin: 0rem;
+    padding: var(--box-padding);
+    border-radius: calc(1rem * var(--scale));
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#box div#advice{
+    margin: calc(1.5rem * var(--scale)) 0rem;
+}
+
+div#box h5{
+    color: var(--neon-green);
+    display: inline;
+    letter-spacing: 0.2rem;
+    margin: 0rem;
+}
+
+div#box p{
+    color: var(--light-cyan);
+    text-align: center;
+    font-size: calc( var(--scale) * 28px);
+    margin: calc(3rem * var(--scale));
+    margin-top: 0rem;
+    justify-self: center;
+}
+
+div#box button#dice{
+    position: absolute;
+    top: calc(var(--box-height));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: calc(4rem * var(--scale));
+    width: calc(4rem * var(--scale));
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--neon-green);
+    transition: 0.5s;
+}
+
+div#box button#dice:hover{
+    box-shadow: 0px 0px 20px 4px var(--neon-green);
+}
